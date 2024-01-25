@@ -9,6 +9,14 @@ body {
     justify-content: center;
     background-color: #0b1522;
 }
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Marck Script', cursive;
+    text-shadow: white 0px 0px 26px;
+    
+}
 
 header {
     color: #fff;
