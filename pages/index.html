@@ -105,7 +105,7 @@ var init = function () {
     var time = 0;
     var loop = function () {
         var n = -Math.cos(time);
-        pulse((1 + n) * .1, (1 + n) * .1);
+        pulse((1 + n) * .3, (1 + n) * .3);
         time += ((Math.sin(time)) < 0 ? 9 : (n > 0.2) ? .2 : 1) * config.timeDelta;
         ctx.fillStyle = "rgba(0,0,0,.1)";
         ctx.fillRect(0, 0, width, height);
