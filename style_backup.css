@@ -25,8 +25,9 @@ h2 {
     font-size: 34px;
     font-family: 'Marck Script', cursive;
     text-shadow: white 0px 0px 26px;
-    animation: pulse 0.6s cubic-bezier(0, 0, 0.26, 1.01) 0s infinite normal none running;
-    -webkit-animation: pulse 0.6s cubic-bezier(0, 0, 0.26, 1.01) 0s infinite normal none running;
+    animation: 0.6s linear(0 0%, 0.85 75%) 0s infinite normal none running pulse;
+    -webkit-animation: 0.6s linear(0 0%, 0.85 75%) 0s infinite normal none running pulse;
+
 }
 
 h1 {
@@ -36,9 +37,10 @@ h1 {
     font-family: 'Marck Script', cursive;
     text-shadow: white 0px 0px 26px;
     position: absolute;
-    animation: pulse 0.6s cubic-bezier(0, 0, 0.26, 1.01) 0s infinite normal none running;
-    -webkit-animation: pulse 0.6s cubic-bezier(0, 0, 0.26, 1.01) 0s infinite normal none running;
+    animation: 0.6s linear(0 0%, 0.85 75%) 0s infinite normal none running pulse;
+    -webkit-animation: 0.6s linear(0 0%, 0.85 75%) 0s infinite normal none running pulse;
 }
+
 
 .heart {
     height: 170px;
