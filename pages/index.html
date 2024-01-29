@@ -116,7 +116,7 @@ var init = function () {
             var dy = u.trace[0].y - q[1];
             var length = Math.sqrt(dx * dx + dy * dy);
             if (10 > length) {
-                if (0.95 < rand()) {
+                if (0.99 < rand()) {
                     u.q = ~~(rand() * heartPointsCount);
                 }
                 else {
