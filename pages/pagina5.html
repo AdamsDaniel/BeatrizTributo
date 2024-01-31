@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pergunta 1</title>
+    <title>Pergunta 5</title>
     <link rel="stylesheet" href="../perguntas.css">
     <link rel="stylesheet" href="../button.css">
 </head>
@@ -14,17 +14,18 @@
     <button onclick="checkAnswer('heart.html')" class="bubbly-button">Avançar</button>
 
     <script>
-        function checkAnswer() {
+        function checkAnswer(nextPage) {
             var resposta = document.getElementById('resposta').value.toLowerCase();
             if (resposta === '2023-10-17') {
-                window.location.href = 'heart.html';
+                // Definir indicador de acesso no sessionStorage
+                sessionStorage.setItem('acesso', true);
+                window.location.href = 'https://adamsdaniel.github.io/BeatrizTributo/pages/' + nextPage;
             } else {
                 alert('Não me ama!😟😟😟');
             }
         }
-
     </script>
-        <script src="../js/button.js"></script>
 
+    <script src="../js/button.js"></script>
 </body>
 </html>

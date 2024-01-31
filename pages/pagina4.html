@@ -19,10 +19,12 @@
     <button onclick="checkAnswer('pagina5.html')" class="bubbly-button">Avançar</button>
 
     <script>
-        function checkAnswer() {
+        function checkAnswer(nextPage) {
             var resposta = document.getElementById('resposta').value.toLowerCase();
             if (resposta === '3') {
-                window.location.href = 'pagina5.html';
+                // Definir indicador de acesso no sessionStorage
+                sessionStorage.setItem('acesso', true);
+                window.location.href = 'https://adamsdaniel.github.io/BeatrizTributo/pages/' + nextPage;
             } else {
                 alert('Não me ama!🥺🥺🥺');
             }

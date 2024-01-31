@@ -19,16 +19,28 @@
     <button onclick="checkAnswer('pagina4.html')" class="bubbly-button">Avançar</button>
 
     <script>
-        function checkAnswer() {
+        function checkAnswer(nextPage) {
             var resposta = document.getElementById('resposta').value.toLowerCase();
             if (resposta === 'ney') {
-                window.location.href = 'pagina4.html';
+                // Definir indicador de acesso no sessionStorage
+                sessionStorage.setItem('acesso', true);
+                window.location.href = 'https://adamsdaniel.github.io/BeatrizTributo/pages/' + nextPage;
             } else {
                 alert('Não me ama!😭😭😭');
             }
         }
+
+        // Verificar se o indicador de acesso está definido no sessionStorage
+        window.onload = function() {
+            if (!sessionStorage.getItem('acesso')) {
+                // Redirecionar apenas se não for a página inicial
+                if (window.location.href !== 'https://adamsdaniel.github.io/BeatrizTributo/pages/pagina3.html') {
+                    window.location.href = 'https://adamsdaniel.github.io/BeatrizTributo/pages/pagina3.html';
+                }
+            }
+        };
     </script>
 
-        <script src="../js/button.js"></script>
+    <script src="../js/button.js"></script>
 </body>
 </html>

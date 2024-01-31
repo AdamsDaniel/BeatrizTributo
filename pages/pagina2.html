@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pergunta 2</title>
+    <title>Página 2</title>
     <link rel="stylesheet" href="../perguntas.css">
     <link rel="stylesheet" href="../button.css">
 </head>
@@ -14,14 +14,26 @@
     <button onclick="checkAnswer('pagina3.html')" class="bubbly-button">Avançar</button>
 
     <script>
-        function checkAnswer() {
+        function checkAnswer(nextPage) {
             var resposta = document.getElementById('resposta').value.toLowerCase();
             if (resposta === '2024-02-09') {
-                window.location.href = 'pagina3.html';
+                // Definir indicador de acesso no sessionStorage
+                sessionStorage.setItem('acesso', true);
+                window.location.href = 'https://adamsdaniel.github.io/BeatrizTributo/pages/' + nextPage;
             } else {
-                alert('Não me ama!😱😱😱');
+                alert('Não me ama!😰😰😰');
             }
         }
+
+        // Verificar se o indicador de acesso está definido no sessionStorage
+        window.onload = function() {
+            if (!sessionStorage.getItem('acesso')) {
+                // Redirecionar apenas se não for a página inicial
+                if (window.location.href !== 'https://adamsdaniel.github.io/BeatrizTributo/pages/pagina2.html') {
+                    window.location.href = 'https://adamsdaniel.github.io/BeatrizTributo/pages/pagina2.html';
+                }
+            }
+        };
     </script>
 
     <script src="../js/button.js"></script>
