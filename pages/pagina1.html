@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pergunta 1</title>
-    <link rel="stylesheet" href="../perguntas.css">
-    <link rel="stylesheet" href="../button.css">
+    <link rel="stylesheet" href="../styles/perguntas.css">
+    <link rel="stylesheet" href="../styles/button.css">
 </head>
 <body>
     <p>Aqui está a sua primeira pergunta:</p>
-    <p>Pergunta: Quantos filhos?🤔</p>
+    <p>Pergunta: Comida predileta?🤔</p>
     <select name="resposta" id="resposta">
         <option value="" disabled selected>Escolha</option>
-        <option value="12">12</option>
-        <option value="3">3</option>
-        <option value="100">100</option>
+        <option value="Lasanha">Lasanha</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Carne">Carne</option>
+        <option value="macarronada">Macarronada</option>
     </select>
     <button onclick="checkAnswer()" class="bubbly-button">Avançar</button>
 
     <script>
         function checkAnswer() {
             var resposta = document.getElementById('resposta').value.toLowerCase();
-            if (resposta === '3') {
+            if (resposta === 'macarronada') {
                 // Definir indicador de acesso no sessionStorage
                 sessionStorage.setItem('acesso', true);
                 window.location.href = 'https://adamsdaniel.github.io/BeatrizTributo/pages/pagina2.html';
