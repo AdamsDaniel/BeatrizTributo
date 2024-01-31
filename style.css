@@ -7,8 +7,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0b1522;
-}
+    background-color: #000;
+}                   
+
 a{
     text-decoration: none;
     color: white;
@@ -113,11 +114,3 @@ h1 {
     -o-border-radius: 90px;
 }
 
-canvas {
-    position: absolute;
-    left:0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.2);
-    z-index: 0;}

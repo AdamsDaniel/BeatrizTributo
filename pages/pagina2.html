@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 2</title>
+    <link rel="stylesheet" href="../perguntas.css">
+    <link rel="stylesheet" href="../button.css">
+</head>
+<body>
+    <p>Aqui está a sua segunda pergunta:</p>
+    <p>Pergunta: Quando foi nosso primeiro encontro?✈️</p>
+    <input type="date" id="resposta">
+    <button onclick="checkAnswer('pagina3.html')" class="bubbly-button">Avançar</button>
+
+    <script>
+        function checkAnswer() {
+            var resposta = document.getElementById('resposta').value.toLowerCase();
+            if (resposta === '2024-02-09') {
+                window.location.href = 'pagina3.html';
+            } else {
+                alert('Não me ama!😱😱😱');
+            }
+        }
+    </script>
+
+    <script src="../js/button.js"></script>
+</body>
+</html>
