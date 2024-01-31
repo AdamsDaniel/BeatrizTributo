@@ -1,0 +1,28 @@
+
+
+/* Defini um breakpoint para telas menores que 600px de largura */
+@media screen and (max-width: 365px) {
+    /* Usei o modelo de layout flexível para alinhar os elementos verticalmente e centralizá-los */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Usei unidades relativas para definir o tamanho da fonte e o espaçamento dos elementos */
+    h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+    button {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}

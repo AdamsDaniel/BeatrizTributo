@@ -8,12 +8,21 @@ body{
     font-family: monospace;
 }
 
+p {
+    margin: 40px;
+    text-align: center;
+}
+h1 {
+    margin: 40px;
+    text-align: center;
+}
+
 input,select{
     font-size: 35px;
 }
 
 button{
-    margin: 20px;
+    margin: 40px;
     font-size: 35px;
 }
 
